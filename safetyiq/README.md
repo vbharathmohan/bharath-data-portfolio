@@ -46,7 +46,6 @@ SafetyIQ addresses this by building a searchable interface over a curated docume
 | **ChromaDB** | Local persistent vector store |
 | **PyMuPDF** | PDF loading and text extraction |
 | **Streamlit** | Web UI: query input, answer display, source cards |
-| **Python-dotenv** | API key management |
 
 ---
 
