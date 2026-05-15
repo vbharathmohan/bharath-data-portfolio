@@ -118,7 +118,6 @@ Chunks are set at 1,000 characters with 200-character overlap. This corresponds 
 **Source attribution**
 Every answer is accompanied by the source document filename and page number for each retrieved chunk. Page numbers are adjusted from PyMuPDF's 0-based indexing to match the actual PDF page numbers.
 
----
 
 ## How to Run
 
