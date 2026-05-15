@@ -119,40 +119,42 @@ Chunks are set at 1,000 characters with 200-character overlap. This corresponds 
 Every answer is accompanied by the source document filename and page number for each retrieved chunk. Page numbers are adjusted from PyMuPDF's 0-based indexing to match the actual PDF page numbers.
 
 
+---
+
 ## How to Run
 
-**1. Clone the repository and set up the environment**
-``````bash
+**1. Clone the repository**
+```bash
 git clone https://github.com/vbharathmohan/safetyiq.git
 cd safetyiq
+```
+
+**2. Set up the environment**
+```bash
 python -m venv safetyiq-env
 source safetyiq-env/bin/activate      # Windows: safetyiq-env\Scripts\activate
 pip install -r requirements.txt
-` ` `
+```
 
-**2. Add your API key**
-`````bash
+**3. Add your API key**
+```bash
 cp .env.example .env
-# Open .env and add your OpenAI API key
-` ` `
+# Open .env and paste your OpenAI API key
+```
 
-**3. Add the PDF corpus**
-Download the six documents listed in the corpus table and place them in `data/pdfs/`.
-This folder is excluded from the repo due to copyright. The ingestion pipeline accepts any text-based PDF so additional documents can be added without code changes.
+**4. Add the PDF corpus**
+Download the six documents listed in the corpus table above and place them in `data/pdfs/` using the exact filenames shown in the project structure.
 
-**4. Run ingestion (one time only)**
-````bash
+**5. Run ingestion (one-time only)**
+```bash
 python src/ingest.py
-` ` `
-Loads, chunks, embeds, and saves all PDFs to ChromaDB. Only needs to run again if the corpus changes.
+```
 
-**5. Launch the app**
+**6. Launch the app**
 ```bash
 streamlit run app.py
-` ` `
-Open `http://localhost:8501` in your browser.
 ```
----
+Open `http://localhost:8501` in your browser.
 
 ## Example Queries
 
@@ -172,6 +174,7 @@ Returns an answer drawing from both the Emerson Control Valve Handbook and API R
 Returns the explicit refusal message rather than a hallucinated answer, because pressure relief valves are not covered in the loaded corpus.
 
 ---
+
 
 ## Roadmap
 
