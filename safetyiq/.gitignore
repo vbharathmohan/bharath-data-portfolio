@@ -1,0 +1,20 @@
+# === CRITICAL: Never commit these ===
+.env                  
+chroma_db/            
+ 
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+env/
+ 
+# OS
+.DS_Store
+Thumbs.db
+ 
+# VSCode
+.vscode/
+
+safetyiq-env/
+data/

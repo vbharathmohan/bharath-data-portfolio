@@ -1,0 +1,18 @@
+# === LangChain Core ===
+langchain==0.2.17
+langchain-community==0.2.17
+langchain-text-splitters==0.2.4
+langchain-chroma==0.1.4
+langchain-openai==0.1.22
+
+# === PDF Parsing ===
+pymupdf==1.24.9
+
+# === Vector Database ===
+chromadb>=0.4.0,<0.6.0
+
+# === UI ===
+streamlit==1.37.0
+
+# === Env ===
+python-dotenv==1.0.1
