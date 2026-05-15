@@ -28,6 +28,7 @@ Hi, I'm Bharath Mohan, an M.Eng student at UC Berkeley specializing in Robotics.
 | Project | Description | Tech Stack | Status |
 |---------|-------------|------------|--------|
 | [Turbofan Engine RUL Prediction](./cmapss-ml/) | XGBoost regression and classification models predicting Remaining Useful Life of industrial engines, tracked with MLflow | XGBoost · MLflow · Databricks · Scikit-learn | Complete |
+| [SafetyIQ - Industrial Documentation Assistant](./safetyiq) | RAG application that lets engineers query industrial safety and equipment documentation (OSHA, API RP 500, NFPA 72, Emerson valve handbook) using plain English. Returns grounded answers with source document and page number cited. Built with MMR retrieval, constrained prompting, and a Streamlit UI. | LangChain · OpenAI · ChromaDB · Streamlit · RAG | Complete |
 
 ---
 
