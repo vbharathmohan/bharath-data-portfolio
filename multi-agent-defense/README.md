@@ -88,19 +88,8 @@ multi-agent-defense/
 │
 ├── evaluate.py                      - Unified evaluation across all approaches (fixed seeds)
 ├── visualize.py                     - Real-time Pygame visualization (all modes)
-├── generate_figures.py              - Publication-quality figure generation
 │
-├── figures/                         - Generated figures for the report
-├── checkpoints/                     - Saved model checkpoints (timestamped subdirectories)
-│   └── YYYYMMDD_HHMMSS/
-│       ├── config_snapshot.py       - Config used for this run
-│       ├── training_log.csv         - Per-episode metrics
-│       ├── agent_best.pth           - Best performing checkpoint
-│       └── agent_ep*.pth            - Periodic checkpoints
-│
-├── report/
-│   ├── report.tex                   - IEEE conference format LaTeX source
-│   └── report.pdf                   - Compiled report (6 pages + references)
+├── assets/                       
 │
 └── README.md
 ```
@@ -136,12 +125,6 @@ python visualize.py --mode optimization
 python visualize.py --mode random
 ```
 Controls: SPACE (pause), R (reset), +/- (speed), ESC (quit).
-
-**5. Generate report figures**
-```bash
-python generate_figures.py --figure all --checkpoint checkpoints/YYYYMMDD_HHMMSS/agent_best.pth
-```
-Saves publication-quality PNGs to `figures/`.
 
 ---
 
